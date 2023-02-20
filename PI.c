@@ -1,0 +1,45 @@
+
+
+//  50 QUESTOES
+
+// 1)
+
+void I()
+{
+
+    int x;
+    int y = 0;
+
+    
+    while(1){   
+        
+        printf("Enter number: ");
+        
+        scanf("%d", &x);
+        
+        if (x == 0) break;
+
+        if (x > y) y = x;               
+    }
+
+
+    printf("%d \n", y);
+
+    return 0;
+}
+
+
+void II () {
+
+
+}
+
+
+
+
+
+int main()
+{
+
+    I();
+}
