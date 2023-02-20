@@ -178,7 +178,7 @@ if (num % 2 == 0)
 
                 }
                 
-                printf("Factorial of %d = %llu", &n, fact);         
+                printf("Factorial of %d = %llu", n, fact);         
            }
                       }
 
@@ -289,11 +289,33 @@ if (num % 2 == 0)
     }
 
       
+        void pyramid1 () {
+
+            int i, j, rows;
+            printf("Enter the number of rows: ");
+            scanf("%d", &rows);
+
+            for (i = 1; i <= rows; ++i) {
+
+                for (j = 1; j <= i; ++j)
+                     printf("* ");
+            
+            }
+                 printf("\n");
+            
+
+
+
+        }
 
 
 int main () {
 
-   powerofNum();
+   pyramid1();
 
     return 0;
-}
+
+ }           
+
+
+
