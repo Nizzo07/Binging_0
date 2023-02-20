@@ -296,22 +296,63 @@ if (num % 2 == 0)
             scanf("%d", &rows);
 
             for (i = 1; i <= rows; ++i) {
+                for (j = 1; j <= i; ++j){
 
-                for (j = 1; j <= i; ++j)
+
+                
                      printf("* ");
-            
-            }
-                 printf("\n");
-            
+                }
+                printf("\n");
+            }            
+}
+
+        void pyramid2 () {
+            int i, j, rows;
+
+                printf("Enter the number of rows: ");
+                scanf("%d", &rows);
+
+                    for(i = rows; i >= 1; --i) {
+                        for(j = 1; j <= i; ++j) {
+
+                            printf("* ");
+                        }
+                        printf("\n");
+                    }
+
 
 
 
         }
 
+        void Calculatorif () {
+            int x, y;
+            char operator;
+
+            printf("Enter the first num: ");
+            scanf("%d",&x);
+            
+            printf("Enter the operator: ");
+            scanf("%c", &operator);
+
+            printf("Enter the second num: ");
+            scanf("%d", &y);
+
+
+            if ( operator == '+') 
+                                printf("%d + %d = %d", &x, &y);
+            else if ( operator == '-')                                
+                             printf("%d - %d = %d", &x, &y);
+            else if ( operator == '*')
+                	         printf("%d * %d = %d", &x, &y);
+            else if ( operator == '/')      
+                             printf("%d / %d = %d", &x, &y);
+
+}
 
 int main () {
 
-   pyramid1();
+   Calculatorif();
 
     return 0;
 
