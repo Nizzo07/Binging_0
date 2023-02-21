@@ -71,7 +71,7 @@ if (num % 2 == 0)
             else printf("Its a cosoant");
             
 
-    }   
+}   
 
 
     void Biggerof3 () {
@@ -90,7 +90,7 @@ if (num % 2 == 0)
 
 
 
-    }
+}
 
     void LeapYear () {
 
@@ -105,7 +105,7 @@ if (num % 2 == 0)
         else printf("The year %d is not a leap year",&x);
 
 
-    }
+}
 
      void NegativePositiveorNull () {
 
@@ -119,7 +119,7 @@ if (num % 2 == 0)
 
 
 
-     }
+}
 
 
     void Alphabetornein () {
@@ -136,7 +136,7 @@ if (num % 2 == 0)
 
 
 
-    }
+}
 
     void sum () {
 
@@ -156,7 +156,7 @@ if (num % 2 == 0)
 
     printf("Sum %d = ",sum);
 
-    }
+}
 
     void factorial () {
 
@@ -180,7 +180,8 @@ if (num % 2 == 0)
                 
                 printf("Factorial of %d = %llu", n, fact);         
            }
-                      }
+                      
+}
 
         void multb () {
 
@@ -193,7 +194,7 @@ if (num % 2 == 0)
                 printf("%d * %d = %d \n", x, i, x * i);
 
             }
-        }
+}
 
         void fibo () {
             //Fibonachi sequence = 0,1,1,2,3,5,8,13,21,34,55(...)
@@ -217,8 +218,7 @@ if (num % 2 == 0)
         nextTerm = t1 + t2;
 
         }
-
-        }
+}
 
     
     void GCD (){
@@ -233,7 +233,7 @@ if (num % 2 == 0)
        } while (n1 != n2);
 
        printf("GCD is %d ", n1);
-    }
+}
 
     void CountNum () {
 
@@ -251,7 +251,7 @@ if (num % 2 == 0)
 
         printf("The number of the digits are %d", count);
 
-    }
+}
 
     void ReverseNum () {
 
@@ -269,8 +269,7 @@ if (num % 2 == 0)
         } 
 
         printf("Reverse number is %d ", reverse);
-
-    }
+}
 
     void powerofNum () {
 
@@ -286,7 +285,7 @@ if (num % 2 == 0)
 
         printf("%.1lf^%.1lf = %.2fd", base, exp, result);
 
-    }
+}
 
       
         void pyramid1 () {
@@ -320,10 +319,7 @@ if (num % 2 == 0)
                         printf("\n");
                     }
 
-
-
-
-        }
+}
 
         void Calculatorif () {
             int x, y;
@@ -331,23 +327,30 @@ if (num % 2 == 0)
 
             printf("Enter the first num: ");
             scanf("%d",&x);
-            
-            printf("Enter the operator: ");
-            scanf("%c", &operator);
+
+             printf("Enter one operator(+,-,/,*): ");
+            scanf(" %c", &operator);
 
             printf("Enter the second num: ");
             scanf("%d", &y);
 
+            
 
-            if ( operator == '+') 
-                                printf("%d + %d = %d", &x, &y);
-            else if ( operator == '-')                                
-                             printf("%d - %d = %d", &x, &y);
-            else if ( operator == '*')
-                	         printf("%d * %d = %d", &x, &y);
-            else if ( operator == '/')      
-                             printf("%d / %d = %d", &x, &y);
 
+            if ( operator == '+')   {                      
+                            printf("%d + %d = %d", x, y, x+y);
+            
+            }else if ( operator == '-')  {               
+                             printf("%d - %d = %d", x, y, x-y);
+            
+             } else if ( operator == '*') {
+                	         printf("%d * %d = %d", x, y, x*y);
+            
+              } else if ( operator == '/') {      
+                              printf("%d / %d = %d", x, y, x/y);
+             
+              } else { printf("Invalid Input :("); 
+        }
 }
 
 int main () {
