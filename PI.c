@@ -32,16 +32,20 @@ void II () {
 
     int x;
     int y;
+    int media;
 
-    while(1){
+        do {
+           printf("Enter a number: ");
+           scanf("%d", &x);
+        } while (x == 0);
 
-        printf("Enter a number: ");
-        scanf("%d", &x);
+        do {
+            printf("Enter a number: ");
+            scanf("%d",&x);
+            media = ((x + y) / 2);
+        } while(x != 0);
 
-            if (x == 0) break;
-                    if(x >= y) x/y;
-                }
-        printf("%d \n", y);
+        printf("A media é %d", x);
     }
 
 
