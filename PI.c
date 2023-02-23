@@ -40,8 +40,8 @@ void II () {
             scanf("%d",&x);
             media = ((x + y) / 2);
 
-                if (x != 0) break;
-                
+                if (x == 0) break;
+
         } while(x != 0);
 
         printf("The value is %d", x);
