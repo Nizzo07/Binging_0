@@ -34,18 +34,17 @@ void II () {
     int y;
     int media;
 
-        do {
-           printf("Enter a number: ");
-           scanf("%d", &x);
-        } while (x == 0);
 
         do {
             printf("Enter a number: ");
             scanf("%d",&x);
             media = ((x + y) / 2);
+
+                if (x != 0) break;
+                
         } while(x != 0);
 
-        printf("A media é %d", x);
+        printf("The value is %d", x);
     }
 
 
