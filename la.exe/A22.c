@@ -7,32 +7,34 @@ int main() {
     int n;
     int  x = 0, y = 0;
 
+//Numero de vezes vai ser possivel meter o input do utilizador
     if(scanf("%d",&n) != 1) abort();
 
-    for ( int i = 0; i < n;i++)
+    for ( int i = 0; i < n;i++ )
     {
+        //Os numeros recebidos se o resto deles na divisao entre o mesmo e o 4 for um dos casos o x vai subir ou descer assim como o y
         if(scanf("%d",&cartas) != 1) abort();
     
         switch(cartas % 4){
-            case 1:
-            y--;
-            break;
-
-            case 2:
-            y++;
+            case 0:
+            x = x+1;
             break;
 
             case 3:
-            x--;
+            x = x -1;
             break;
 
-            case 0:
-            x++;
+            case 2:
+            y = y + 1;
+            break;
+
+            case 1:
+            y = y - 1;
             break;
         }
     }
 
-        printf("Poiseção é (%d,%d)\n", x, y);
+        printf("%d %d\n", x, y);
 
         return 0;
 }
