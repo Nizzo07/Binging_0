@@ -35,15 +35,14 @@ int main()
         // sempre que o C for igual a 0 e o o for igual a 1 fazemos a sua soma
         else if (C == 0 && o == 1)
             C = C + o;
-        else if (C == 0 && o == -1)
-            C = C + o;
+        
     // quando o C for igual a A no meio dos inputs o C dev manter-se igual ao A e no proximo input deve descer e se for para ser maior q o A deve manter se igual ao A       
         else if( C == A && o == 1)
             C = A;
         else if(C == A && o == -1)
             C = C + o;
-        else if(C == 0 && o == -1)
-            C = 0;
+        else if(C == -1)
+            C = 1;
     }
     printf("%d\n", C);
 
