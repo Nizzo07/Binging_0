@@ -19,16 +19,41 @@ int main()
         {
             return 2;
         }
-        if(z == '@' && c == '+')
-        {
+        if (z == '@' && c == '+')
+
             wi++;
-        } else {
-            if( z == '@' && c == '-'){
-                wc++;
-            } 
+
+        else if (z == '@' && c == '-')
+
+            wc++;
+        
+        else if (z == '|' && c == '*')
             
-        }
-       
+            wi++;
+        
+        else if (z == '|' && c == '+')
+            
+            wc++;
+        
+        else if (z == 'X' && c == '-')
+            
+            wi++;
+        
+        else if (z == 'X' && c == '*')
+            
+            wc++;
+        
+        else if(z == '@' && c == '*')
+            
+            d++;
+        
+        else if(z == '|' && c == '-')
+            
+            d++;
+        
+        else if(z == 'X' && c == '+')
+           
+            d++;
     }
 
     printf("%d %d %d", wi, wc, d);
