@@ -15,7 +15,7 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        if (scanf("%c %c", &z, &c) != 2)
+        if (scanf(" %c %c\n", &z, &c) != 2)
         {
             return 2;
         }
