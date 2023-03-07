@@ -6,6 +6,7 @@ int main()
 {
   int n;
   int posicao = 5;
+  char mov;
 
   if(scanf("%d",&n) != 1)
   {
@@ -13,7 +14,11 @@ int main()
   }
     for(int i = 0; i < n; i++)
     {
-        
+        if(scanf("%c",&mov) != 1)
+        {
+            return 1;
+   
+
     }
 
 
