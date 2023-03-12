@@ -1,30 +1,54 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
-int main()
+int main() {
+    // keypad representado como uma matriz de caracteres
+    char keypad[3][3] = {{'7', '8', '9'},
+                         {'4', '5', '6'},
+                         {'1', '2', '3'}};
 
- {
-    int n, c = 5;
-    char keypad [3][3] = {{1,2,3},{4,5,6},{7,8,9}};
+    // posição inicial do utilizador
+    int current_row = 1;
+    int current_col = 1;
 
-   if(scanf("%d", &n) != 1){
+    // número de linhas de comandos a serem lidas
+    int n;
+    if(scanf("%d\n", &n) != 1){
       return 1;
-   }
+    }
 
-   for(int i = 0; i < n; i++)
-   {
-      for(int j = 0; j < i; j++)
-      {
-         printf("%c", keypad[i][j]);
-      }
-   }
+    // ler as linhas de comandos e atualizar a posição do utilizador
+    for (int i = 0; i < n; i++) {
+        char commands[21];
+        if(scanf("%s\n", commands) != 1){
+         return 1;
+        }
 
-   printf("    ")
-
+        for (int j = 0; commands[j] != '\0'; j++) {
+            switch (commands[j]) {
+                case 'C':
+                    if (current_row > 0) {
+                        current_row--;
+                    }
+                    break;
+                case 'B':
+                    if (current_row < 2) {
+                        current_row++;
+                    }
+                    break;
+                case 'D':
+                    if (current_col < 2) {
+                        current_col++;
+                    }
+                    break;
+                case 'E':
+                    if (current_col > 0) {
+                        current_col--;
+                    }
+                    break;
+            }
+        }
+        printf("%c\n", keypad[current_row][current_col]);
+    }
 
     return 0;
- }
-
-
-
+}
