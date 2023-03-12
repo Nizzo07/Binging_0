@@ -49,6 +49,7 @@ int main() {
         }
         printf("%c\n", keypad[current_row][current_col]);
     }
+     
 
     return 0;
 }
