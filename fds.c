@@ -35,7 +35,8 @@ void CalculadoraS()
     default:
         printf("Error! Incorrect operator!!");
     }
-    return 0;
+        return 0;
+
 }
 
 void ODDEVEN()
@@ -357,18 +358,7 @@ void Calculatorif()
     }
 }
 
-void circulo()
-{
-
-    int x, y;
-
-    
-}
-
-
-
-
-    void piramidejuntaaoutra () {
+void piramidejuntaaoutra () {
 
         int i, space, rows, k = 0;
         printf("Enter a number of rows: ");
@@ -387,10 +377,25 @@ void circulo()
 
     }
 
+
+   void array ()
+    {
+        int pares[] = {2,4,6,8,10};
+        
+        printf("%d\n", pares[0]);
+        printf("%d\n", pares[1]);
+        printf("%d\n", pares[2]);
+        printf("%d\n", pares[3]);
+        printf("%d\n", pares[4]);
+
+    }
+
+
+
 int main()
 {
 
-    piramidejuntaaoutra();
+    array();
 
-    return ;
+    return 0;
 }

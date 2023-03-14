@@ -1,25 +1,21 @@
 #include <stdio.h>
-#include <string.h>
 
 int main() {
     int n;
-    char line[1001];
+    scanf("%d", &n);
+    getchar(); // remove o caractere '\n' do buffer
 
-    // Lê o número de casos
-    fgets(line, 1001, stdin);
-    sscanf(line, "%d", &n);
-
-    // Lê as N linhas contendo as palavras
     for (int i = 0; i < n; i++) {
-        fgets(line, 1001, stdin);
-
-        // Separa as palavras
-        char *token = strtok(line, " ");
-        while (token != NULL) {
-            printf("%s\n", token);
-            token = strtok(NULL, " ");
+        char word[1001];
+        int count = 0;
+        while (scanf("%s", word) == 1) {
+            count++;
         }
+        getchar(); // remove o caractere '\n' do buffer
+        printf("%d\n", count);
     }
 
     return 0;
 }
+
+
